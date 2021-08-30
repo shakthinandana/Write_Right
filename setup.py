@@ -1,2 +1,2 @@
 # Setup file
-pip install numpy
+python setup.py install
