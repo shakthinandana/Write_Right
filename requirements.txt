@@ -1,4 +1,1 @@
-pip version pip 20.2.4
-python version 3.9
-
 
