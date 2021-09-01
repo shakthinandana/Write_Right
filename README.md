@@ -3,6 +3,8 @@
 
 20th group's readme file. We're winning this thing.
 
+![Alt Text](https://giphy.com/gifs/cbs-1xVfByxByNvUiclzzL/giphy.gif)
+
 <img src="https://giphy.com/gifs/cbs-1xVfByxByNvUiclzzL/giphy.gif" width="40" height="40" />
 
 
