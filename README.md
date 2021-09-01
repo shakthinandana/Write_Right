@@ -3,7 +3,7 @@
 
 20th group's readme file. We're winning this thing.
 
-<iframe src="https://giphy.com/embed/1xVfByxByNvUiclzzL" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cbs-1xVfByxByNvUiclzzL">via GIPHY</a></p>
+<img src="https://giphy.com/gifs/cbs-1xVfByxByNvUiclzzL/giphy.gif" width="40" height="40" />
 
 
 ![basic badge](https://github.com/shakthinandana/Team20_SE_Project/actions/workflows/unit-test.yml/badge.svg)
