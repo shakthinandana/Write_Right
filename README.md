@@ -3,9 +3,8 @@
 
 20th group's readme file. We're winning this thing.
 
-![Alt Text](https://giphy.com/gifs/cbs-1xVfByxByNvUiclzzL/giphy.gif)
+![We win](We win.gif)
 
-<img src="https://giphy.com/gifs/cbs-1xVfByxByNvUiclzzL/giphy.gif" width="40" height="40" />
 
 
 ![basic badge](https://github.com/shakthinandana/Team20_SE_Project/actions/workflows/unit-test.yml/badge.svg)
