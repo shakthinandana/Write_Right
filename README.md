@@ -3,10 +3,7 @@
 
 20th group's readme file. We're winning this thing.
 
-![We_win](https://github.com/shakthinandana/Team20_SE_Project/blob/main/We%20win.gif)
-
-<img src="https://github.com/shakthinandana/Team20_SE_Project/blob/main/We%20win.gif" width="40" height="40" />
-
+<img src="https://github.com/shakthinandana/Team20_SE_Project/blob/main/We%20win.gif" width="150" height="150" />
 
 
 ![basic badge](https://github.com/shakthinandana/Team20_SE_Project/actions/workflows/unit-test.yml/badge.svg)
