@@ -3,7 +3,7 @@
 
 20th group's readme file. We're winning this thing.
 
-![Alt-text](We win.gif)
+![Alt-text](https://github.com/shakthinandana/Team20_SE_Project/blob/main/We%20win.gif)
 
 
 
