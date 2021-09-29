@@ -1,4 +1,4 @@
-# Write Right <img src="https://github.com/shakthinandana/Write_Right/blob/shakthinandana-patch-1/images/W_logo.png" width="40" height="40">
+# Write Right <img src="https://github.com/shakthinandana/Write_Right/blob/main/images/logo.png" width="40" height="40">
 <img src="https://github.com/shakthinandana/Write_Right/blob/main/images/logo.jpg" width="20" height="20">
 
 
