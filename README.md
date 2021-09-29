@@ -24,6 +24,9 @@ Select a Word from any page and,
 You can use our extension to gain better understandng of the content you are reading and also to create sound content without mistakes and high clarity.
 
 
+## Installation
+
+
 ## Tech
 
 Write Right uses a number of open source projects to work properly:
@@ -39,11 +42,7 @@ Write Right uses a number of open source projects to work properly:
 to Markdown converter
 - [jQuery] - duh
 
-And of course Write Right itself is open source with a [public repository](https://github.com/shakthinandana/Write_Right/)
- on GitHub.
-
-## Installation
-
+And of course Write Right itself is open source.
 
 ## Development
 
