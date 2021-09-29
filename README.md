@@ -1,5 +1,4 @@
 # Write Right <img src="https://github.com/shakthinandana/Write_Right/blob/main/images/logo.png" width="40" height="40">
-<img src="https://github.com/shakthinandana/Write_Right/blob/main/images/logo.jpg" width="20" height="20">
 
 
 ![basic badge](https://github.com/shakthinandana/Team20_SE_Project/actions/workflows/unit-test.yml/badge.svg)
