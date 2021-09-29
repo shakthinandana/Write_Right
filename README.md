@@ -6,7 +6,7 @@
 
 ## _The only advisor you need_
 
-<img src="https://github.com/shakthinandana/Write_Right/images/gotyour_back.jpg" width="150" height="150" />
+<img src="https://github.com/shakthinandana/Write_Right/blob/main/images/gotyour_back.jpg" width="150" height="150" />
 
 ## About Write Right
 Write Right,is a writing assistant that provides meanings, synonyms, antonyms and more, helping in contructing good content.
