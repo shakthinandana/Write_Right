@@ -96,15 +96,21 @@ function handleSubmit() {
                 synonyms.css('display', 'block');
                 synonyms.append('Synonyms');
                 for (var i = 0; i < data.length; i++) {
-                    let mainSyn = `<li> <ul id="subSyn${i}"> </ul> </li>`;
-                    synonyms.append(mainSyn);
+  
+                  if(data[i].meta.id == wordToSearch.val()){
+                      let mainSyn = `<li> <ul id="subSyn${i}"> </ul> </li>`;
+                      synonyms.append(mainSyn);
+                  }
                 }
 
                 antonyms.css('display', 'block');
                 antonyms.append('Antonyms');
                 for (var i = 0; i < data.length; i++) {
+                  
+                  if(data[i].meta.id == wordToSearch.val()){
                     let mainAnt = `<li> <ul id="subAnt${i}"> </ul> </li>`;
                     antonyms.append(mainAnt);
+                  }
                 }
 
                 for (var k = 0; k < data.length; k++) {
