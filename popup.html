@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<span id="SearchBox">
+		<input type="text" id="wordToSearch" autofocus="autofocus" placeholder="Enter word to Search Here">
+	</span>
+	<div>
+		<ul id='translation' class="outputs">
+			<li>Translation</li>
+		</ul>
+		<ul id='meaning' class='outputs'>
+			<li>Meaning</li>
+		</ul>
+		<div id="error"></div>
+		<ul id='synonyms'  class='outputs'>
+			<li>Synonyms</li>
+		</ul>
+		<ul id='antonyms'  class='outputs'>
+			<li>Antonyms</li>
+		</ul>
+		<ul id='audio'>
+			<input type="image" src="./images/speaker_icon.png" id='audio_input' />
+		</ul>
+	</div>
+	<div> 
+		<button id="submit" class="btn">Search</button>
+	</div>
+	<div id = 'checkbox'>
+		<input type="checkbox" id = 'Translate' value = "Yes">
+		<label for="Translate">Translate</label>
+	</div>
+	<div>
+		<div class="translation_inputs">
+			<label for="Source">Source Language:</label>
+			<input type="text" id="Source">
+		</div>
+		<div class="translation_inputs">
+			<label for="Destination">Required Language:</label>
+			<input type="text" id="Destination">
+		</div>
+	</div>
+	<div>
+		<a href="https://github.com/shakthinandana/Write_Right/" target="_blank" rel="noopener noreferrer">Documentation</a>
+	</div>
+	<!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="popup.js"></script>
+</body>
+
+</html>
