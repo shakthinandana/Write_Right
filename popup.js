@@ -5,6 +5,8 @@ let antonyms = $('#antonyms');
 let wordToSearch = $('#wordToSearch');
 let error = $('#error');
 let audio1 = $('#audio');
+let Source = $('.translation_inputs');
+let Destination = $('.Destination')
 base_url = ''
 
 // chrome.tabs.executeScript(integer tabId(optional, default: current window), object details, function callback)
@@ -192,3 +194,14 @@ function playAudio() {
   return audio.paused ? audio.play() : audio.pause();
 
   }
+
+document.getElementById("Translate").addEventListener("click", displaychange);
+
+function displaychange() {
+    if (Translate.checked) {
+        Source.css('display', 'inline-block')
+    } else {
+        Source.css('display', 'none')
+    } 
+}
+
