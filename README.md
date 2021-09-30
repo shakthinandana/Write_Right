@@ -43,22 +43,13 @@ You can use our extension to gain better understandng of the content you are rea
 * There are two ways to use this extension. You can simply click on the extension and enter any word to search for it.
 * alternatively you can highlight a word in a webpage and click  <kbd>Alt</kbd> + <kbd>s</kbd> and then hit <kbd>Enter</kbd>  to do the same.
 
-## Tech
+## Languages used
 
 Write Right uses a number of open source projects to work properly:
 
-- [AngularJS] - HTML enhanced for web apps!
-- [Ace Editor] - awesome web-based text editor
-- [markdown-it] - Markdown parser done right. Fast and easy to extend.
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - evented I/O for the backend
-- [Express] - fast node.js network app framework [@tjholowaychuk]
-- [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-to Markdown converter
-- [jQuery] - duh
-
-And of course Write Right itself is open source.
+- HTML
+- JavaScript
+- CSS
 
 ## Development
 
