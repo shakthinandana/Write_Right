@@ -1,5 +1,4 @@
-# Write Right <img src="https://github.com/shakthinandana/Write_Right/blob/main/images/logo.png" width="40" height="40">
-
+# Write Right ✔
 ![MIT license](https://img.shields.io/badge/License-MIT-green.svg)
 [![GitHub issues](https://img.shields.io/github/issues/shakthinandana/Write_Right)](https://github.com/shakthinandana/Write_Right.git)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/shakthinandana/Write_Right)
