@@ -35,7 +35,9 @@ document.addEventListener('keydown', key => {
 
 
 findBtn.click(() => {
-meaning.empty();
+    meaning.empty();
+    synonyms.empty();
+    antonyms.empty();
 if (wordToSearch.val() === "") {
   meaning.empty();
   error.css('display', 'block');
@@ -66,8 +68,6 @@ fetch(url)
       meaning.append('Searching ...');
       meaning.empty();
 
-
-
       for (var i = 0; i < data.length; i++) {
         let txtMain = `<li>
           <strong style="text-transform: capitalize">${data[i].meta.id}</strong>
@@ -78,12 +78,19 @@ fetch(url)
       }
 
       synonyms.css('display', 'block');
-      for (var i=0; i < 2; i++) {
+      for (var i=0; i < data.length; i++) {
         let mainSyn = `<li>
-          <ul id="subSyn${i}"> </ul>
-      </li>`;
+          <ul id="subSyn${i}"> </ul> </li>`;
         synonyms.append(mainSyn);
-      }
+       }
+
+       antonyms.css('display', 'block');
+       for (var i = 0; i < data.length; i++) {
+           let mainAnt = `<li>
+           <ul id="subAnt${i}"> </ul> </li>`;
+           antonyms.append(mainAnt);
+        }
+
 /*
       for (var k = 0; k < data.length; k++) {
         for (var i = 0; i < data[k].meanings.length; i++) {
@@ -100,7 +107,7 @@ fetch(url)
 for (var k = 0; k < data.length; k++) {
 var type = data[k]["fl"];
 var def = data[k]["shortdef"];
-var syns = data[k]['meta']['syns'][0];
+var syns = data[k]['meta']['syns'];
 var ants = data[k]['meta']['ants'];
 
 
@@ -110,18 +117,18 @@ var ants = data[k]['meta']['ants'];
             $('#sublist' + k).append(txtSub)
 
             let txtSyn = `<li>
-              ${syns}
+              ${syns} [<em>${type}</em>]
             </li>`;
             $('#subSyn' + k).append(txtSyn)
 
+            let txtAnt = `<li>
+            ${ants} [<em>${type}</em>]
+            </li>`;
+            $('#subAnt' + k).append(txtAnt)
+
    //         synonyms.css('display','block');
 
-
-
 }
-
-
-
 
     }
   })
