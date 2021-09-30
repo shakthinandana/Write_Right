@@ -18,9 +18,10 @@
 * **AutoSuggestions**-suggests correct word during the search process.
 * **Semantic Feedback** on a group of words.
 * Units convertor addition
+* Code refactoring for translation.
 
 
-## Immediate Goals
+## Immediate Goals 
 * Add **unit tests**
     * 
     *
