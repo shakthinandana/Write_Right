@@ -42,6 +42,7 @@ findBtn.click(() => {
     error.css('display', 'none')
     synonyms.css('display', 'none');
     antonyms.css('display', 'none')
+
     if (wordToSearch.val() === "") {
         meaning.empty();
         error.css('display', 'block');
@@ -93,12 +94,14 @@ function handleSubmit() {
                 }
 
                 synonyms.css('display', 'block');
+                synonyms.append('Synonyms');
                 for (var i = 0; i < data.length; i++) {
                     let mainSyn = `<li> <ul id="subSyn${i}"> </ul> </li>`;
                     synonyms.append(mainSyn);
                 }
 
                 antonyms.css('display', 'block');
+                antonyms.append('Antonyms');
                 for (var i = 0; i < data.length; i++) {
                     let mainAnt = `<li> <ul id="subAnt${i}"> </ul> </li>`;
                     antonyms.append(mainAnt);
@@ -107,26 +110,35 @@ function handleSubmit() {
                 for (var k = 0; k < data.length; k++) {
                     var type = data[k]["fl"];
                     var def = data[k]["shortdef"];
-                    var syns = data[k]['meta']['syns'];
 
                     let txtSub = `<li> ${def} [<em>${type}</em>] </li>`;
                     $('#sublist' + k).append(txtSub)
+                }
 
-                    let txtSyn = `<li> ${syns} [<em>${type}</em>] </li>`;
-                    $('#subSyn' + k).append(txtSyn)
+                for (var k = 0; k < data.length; k++) {
+                    for (j = 0; j < data[k]['meta']['syns'].length; j++) {
+                        var syns = data[k]['meta']['syns'][j];
+
+                        syns = syns.slice(0, 5);
+                        let txtSyn = `<li> ${syns} [<em>${type}</em>] </li>`;
+                        $('#subSyn' + k).append(txtSyn)
+                    }
 
                 }
-                for (var k = 0; k < data.length; k++) {
-                    var ants = data[k]['meta']['ants'];
 
-                    if (ants.length !== 0) {
-                        let txtAnt = `<li> ${ants} [<em>${type}</em>] </li>`;
-                        $('#subAnt' + k).append(txtAnt)
-                    }
-                    else {
-                        antonyms.css('display', 'none');
-                        break;
+                for (var k = 0; k < data.length; k++) {
+                    for (j = 0; j < data[k]['meta']['ants'].length; j++) {
+                        var ants = data[k]['meta']['ants'][j];
+
+                        ants = ants.slice(0, 5);
+                        if (ants.length !== 0) {
+                            let txtAnt = `<li> ${ants} [<em>${type}</em>] </li>`;
+                            $('#subAnt' + k).append(txtAnt)
+                        } else {
+                            antonyms.css('display', 'none');
+                            break;
                         }
+                    }
 
                 }
 
