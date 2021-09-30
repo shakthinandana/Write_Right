@@ -5,7 +5,7 @@
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/shakthinandana/Write_Right)
 ![GitHub contributors](https://img.shields.io/github/contributors/shakthinandana/Write_Right)
 [![Coverage Status](https://coveralls.io/repos/github/shakthinandana/Write_Right/badge.svg?branch=main)](https://coveralls.io/github/shakthinandana/Write_Right?branch=main)
-![basic badge](https://github.com/shakthinandana/Team20_SE_Project/actions/workflows/unit-test.yml/badge.svg)
+![basic badge](https://github.com/shakthinandana/Write_Right/actions/workflows/unit-test.yml/badge.svg)
 <a href="https://zenodo.org/badge/latestdoi/401511933"><img src="https://zenodo.org/badge/401511933.svg" alt="DOI"></a>
 
 ## _The only advisor you need_
