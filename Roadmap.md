@@ -19,6 +19,7 @@
 * **Semantic Feedback** on a group of words.
 * Units convertor addition
 * Code refactoring for translation.
+* Find a better API for definitions.
 
 
 ## Immediate Goals 
