@@ -64,8 +64,9 @@ findBtn.click(() => {
 })
 
 function handleSubmit() {
-    console.log(wordToSearch.val());
-    const url = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/' + wordToSearch.val() + '?key=05263739-8ae9-45fe-842c-3a37ed0f181b';
+    let str = String(wordToSearch.val()).toLowerCase();
+    console.log(str);
+    const url = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/' + str + '?key=05263739-8ae9-45fe-842c-3a37ed0f181b';
     fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -98,26 +99,28 @@ function handleSubmit() {
                 meaning.empty();
                 checkAudio();
                 for (var i = 0; i < data.length; i++) {
-                    let txtMain = `<li> <strong style="text-transform: capitalize">${data[i].meta.id}</strong>
-                    <i> ${data[i].fl}</i><ol id="sublist${i}"> </ol> </li>`;
-                    meaning.append(txtMain);
+                    if(data[i].meta.id == str){
+                        let txtMain = `<li> <strong style="text-transform: capitalize">${data[i].meta.id}</strong>
+                        <i> ${data[i].fl}</i><li id="sublist${i}"> </li> </li>`;
+                        meaning.append(txtMain);
+                    }
                 }
 
                 synonyms.css('display', 'block');
-                synonyms.append('Synonyms');
+                synonyms.append('<li><strong style="text-transform: capitalize">Synonyms</strong></li>');
                 for (var i = 0; i < data.length; i++) {
   
-                  if(data[i].meta.id == wordToSearch.val()){
+                  if(data[i].meta.id == str){
                       let mainSyn = `<li> <ul id="subSyn${i}"> </ul> </li>`;
                       synonyms.append(mainSyn);
                   }
                 }
 
                 antonyms.css('display', 'block');
-                antonyms.append('Antonyms');
+                antonyms.append('<li><strong style="text-transform: capitalize">Antonyms</strong></li>');
                 for (var i = 0; i < data.length; i++) {
                   
-                  if(data[i].meta.id == wordToSearch.val()){
+                  if(data[i].meta.id == str){
                     let mainAnt = `<li> <ul id="subAnt${i}"> </ul> </li>`;
                     antonyms.append(mainAnt);
                   }
