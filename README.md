@@ -1,7 +1,7 @@
 # Write Right ✔
 ![MIT license](https://img.shields.io/badge/License-MIT-green.svg)
-[![GitHub issues](https://img.shields.io/github/issues/shakthinandana/Write_Right)](https://github.com/shakthinandana/Write_Right.git)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/shakthinandana/Write_Right)
+[![GitHub issues](https://img.shields.io/github/issues/shakthinandana/Write_Right)](https://github.com/shakthinandana/Write_Right/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/shakthinandana/Write_Right)](https://github.com/shakthinandana/Write_Right/issues?q=is%3Aissue+is%3Aclosed)
 ![GitHub contributors](https://img.shields.io/github/contributors/shakthinandana/Write_Right)
 [![Coverage Status](https://coveralls.io/repos/github/shakthinandana/Write_Right/badge.svg?branch=main)](https://coveralls.io/github/shakthinandana/Write_Right?branch=main)
 ![basic badge](https://github.com/shakthinandana/Write_Right/actions/workflows/unit-test.yml/badge.svg)
