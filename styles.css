@@ -41,6 +41,7 @@ body {
 .translation_inputs {
       width: 49%;
       display: none;
+      padding-bottom: 5px;
 }
 
 #SearchBox {
