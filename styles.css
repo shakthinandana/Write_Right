@@ -5,6 +5,16 @@ body {
       width: 400px;
     }
 
+input {
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+        text-align: center;
+}
+:-moz-placeholder {
+        text-align: center;
+}
 .outputs {
       background-color: white;
       border-radius: 18px 0px 0px 18px;
@@ -34,7 +44,7 @@ body {
 
 .btn:hover {
       color: #fff;
-      background-color: #E53935;
+      background-color: #C62828;
       border-color: #B71C1C;
     }
 
@@ -58,6 +68,7 @@ body {
       font-size: 20px;
       width: 95%;
       padding-left: 10px;
+      font-weight: bold;
     }
 
 #wordToSearch:focus {
