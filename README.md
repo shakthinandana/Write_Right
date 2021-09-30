@@ -34,7 +34,11 @@ You can use our extension to gain better understandng of the content you are rea
     chrome://extensions
   ```
 * Click on 'Load unpacked' and browse to the directories location.
+* You are all set now :call_me_hand:
 
+## Usage
+* There are two ways to use this extension. You can simply click on the extension and enter any word to search for it.
+* alternatively you can highlight a word in a webpage and click <kbd>Alt</kbd> + <kbd>s</kbd> and then <kbd>Enter</kbd> key to do the same.
 
 ## Tech
 
