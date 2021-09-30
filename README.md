@@ -1,6 +1,9 @@
 # Write Right <img src="https://github.com/shakthinandana/Write_Right/blob/main/images/logo.png" width="40" height="40">
 
-
+![MIT license](https://img.shields.io/badge/License-MIT-green.svg)
+[![GitHub issues](https://img.shields.io/github/issues/shakthinandana/Write_Right)](https://github.com/shakthinandana/Write_Right.git)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/shakthinandana/Write_Right)
+![GitHub contributors](https://img.shields.io/github/contributors/shakthinandana/Write_Right)
 ![basic badge](https://github.com/shakthinandana/Team20_SE_Project/actions/workflows/unit-test.yml/badge.svg)
 <a href="https://zenodo.org/badge/latestdoi/401511933"><img src="https://zenodo.org/badge/401511933.svg" alt="DOI"></a>
 
