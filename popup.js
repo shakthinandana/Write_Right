@@ -89,7 +89,7 @@ function handleSubmit() {
 
                 for (var i = 0; i < data.length; i++) {
                     let txtMain = `<li> <strong style="text-transform: capitalize">${data[i].meta.id}</strong>
-                    <ol id="sublist${i}"> </ol> </li>`;
+                    <i> ${data[i].fl}</i><ol id="sublist${i}"> </ol> </li>`;
                     meaning.append(txtMain);
                 }
 
@@ -111,7 +111,7 @@ function handleSubmit() {
                     var type = data[k]["fl"];
                     var def = data[k]["shortdef"];
 
-                    let txtSub = `<li> ${def} [<em>${type}</em>] </li>`;
+                    let txtSub = `<li> ${def} </li>`;
                     $('#sublist' + k).append(txtSub)
                 }
 
@@ -126,6 +126,7 @@ function handleSubmit() {
 
                 }
 
+                labelAnts:
                 for (var k = 0; k < data.length; k++) {
                     for (j = 0; j < data[k]['meta']['ants'].length; j++) {
                         var ants = data[k]['meta']['ants'][j];
@@ -136,7 +137,7 @@ function handleSubmit() {
                             $('#subAnt' + k).append(txtAnt)
                         } else {
                             antonyms.css('display', 'none');
-                            break;
+                            break labelAnts;
                         }
                     }
 
