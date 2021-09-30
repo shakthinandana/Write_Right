@@ -83,7 +83,7 @@ function handleSubmit() {
 
                 synonyms.css('display', 'block');
                 for (var i = 0; i < data.length; i++) {
-                    let mainNear = `<li> <ol id="subNear${i}"> </ol> </li>`;
+                    let mainNear = `<li> <ul id="subNear${i}"> </ul> </li>`;
                     synonyms.append(mainNear);
                 }
 
