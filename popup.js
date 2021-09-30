@@ -136,13 +136,19 @@ function handleSubmit() {
                     $('#sublist' + k).append(txtSub)
                 }
 
+                labelSyns:
                 for (var k = 0; k < data.length; k++) {
                     for (j = 0; j < data[k]['meta']['syns'].length; j++) {
                         var syns = data[k]['meta']['syns'][j];
 
                         syns = syns.slice(0, 5);
-                        let txtSyn = `<li> ${syns} [<em>${type}</em>] </li>`;
-                        $('#subSyn' + k).append(txtSyn)
+                        if (syns.length === 0 || syns[0].length === 0) {
+                            break labelSyns;
+                        } else {
+                            let txtSyn = `<li> ${syns} [<em>${type}</em>] </li>`;
+                            $('#subSyn' + k).append(txtSyn)
+                        }
+                        
                     }
 
                 }
@@ -153,13 +159,12 @@ function handleSubmit() {
                         var ants = data[k]['meta']['ants'][j];
 
                         ants = ants.slice(0, 5);
-                        if (ants.length !== 0) {
+                        if (ants.length === 0 || ants[0].length === 0) {
+                            break labelAnts;
+                        } else {
                             let txtAnt = `<li> ${ants} [<em>${type}</em>] </li>`;
                             $('#subAnt' + k).append(txtAnt)
-                        } else {
-                            antonyms.css('display', 'none');
-                            break labelAnts;
-                        }
+                        }                    
                     }
 
                 }
