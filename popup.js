@@ -64,10 +64,22 @@ function handleSubmit() {
                 error.text('No such word was found');
 
             } else if (data[0]['meta'] === undefined) {
-                //(data.title === 'Something Went Wrong.' || data.title === 'API Rate Limit Exceeded') {
                 error.css('display', 'block');
                 error.text('Word not found. Did you mean to type any of these?');
-                error.append(data)
+
+                synonyms.css('display', 'block');
+                for (var i = 0; i < data.length; i++) {
+                    let mainNear = `<li> <ol id="subNear${i}"> </ol> </li>`;
+                    synonyms.append(mainNear);
+                }
+
+                for (var k = 0; k < data.length; k++) {
+                    var nearWords = data[k];
+
+                    let txtNear = `<li> ${nearWords} </li>`;
+                    $('#subNear' + k).append(txtNear)
+                }
+
 
             } else {
                 meaning.css('display', 'block');
@@ -92,25 +104,10 @@ function handleSubmit() {
                     antonyms.append(mainAnt);
                 }
 
-                /*
-                      for (var k = 0; k < data.length; k++) {
-                        for (var i = 0; i < data[k].meanings.length; i++) {
-                          for (var j = 0; j < data[k].meanings[i].definitions.length; j++) {
-                            let txtSub = `<li>
-                              ${data[k].meanings[i].definitions[j].definition} [<em>${data[k].meanings[i].partOfSpeech}</em>]
-                            </li>`;
-                            $('#sublist' + k).append(txtSub)
-                          }
-                        }
-                      }
-                */
-
                 for (var k = 0; k < data.length; k++) {
                     var type = data[k]["fl"];
                     var def = data[k]["shortdef"];
                     var syns = data[k]['meta']['syns'];
-                    var ants = data[k]['meta']['ants'];
-
 
                     let txtSub = `<li> ${def} [<em>${type}</em>] </li>`;
                     $('#sublist' + k).append(txtSub)
@@ -118,11 +115,18 @@ function handleSubmit() {
                     let txtSyn = `<li> ${syns} [<em>${type}</em>] </li>`;
                     $('#subSyn' + k).append(txtSyn)
 
-                    if (ants !== null) {
+                }
+                for (var k = 0; k < data.length; k++) {
+                    var ants = data[k]['meta']['ants'];
+
+                    if (ants.length !== 0) {
                         let txtAnt = `<li> ${ants} [<em>${type}</em>] </li>`;
                         $('#subAnt' + k).append(txtAnt)
                     }
-                    //         synonyms.css('display','block');
+                    else {
+                        antonyms.css('display', 'none');
+                        break;
+                        }
 
                 }
 
