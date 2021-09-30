@@ -38,7 +38,7 @@ You can use our extension to gain better understandng of the content you are rea
 
 ## Usage
 * There are two ways to use this extension. You can simply click on the extension and enter any word to search for it.
-* alternatively you can highlight a word in a webpage and click <kbd>Alt</kbd> + <kbd>s</kbd> and then <kbd>Enter</kbd> key to do the same.
+* alternatively you can highlight a word in a webpage and click  <kbd>Alt</kbd> + <kbd>s</kbd> and then hit <kbd>Enter</kbd>  to do the same.
 
 ## Tech
 
