@@ -25,7 +25,7 @@ You can use our extension to gain better understandng of the content you are rea
 
 
 ## Installation
-*First clone this repository.
+* First clone this repository.
   ```sh
     git clone https://github.com/shakthinandana/Write_Right.git
   ```
