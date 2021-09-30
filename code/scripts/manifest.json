@@ -6,10 +6,10 @@
   "description": "A Simple tool to make writing better,faster and professional ",
   "permissions": ["activeTab", "declarativeContent"],
   "icons": {
-    "16": "images/icons/icon_16.png",
-    "32": "images/icons/icon_32.png",
-    "48": "images/icons/icon_48.png",
-    "128": "images/icons/icon_128.png"
+    "16": "images/icon_16.png",
+    "32": "images/icon_32.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
   },
   "content_scripts": [
     {
@@ -22,9 +22,9 @@
 
   "page_action": {
     "default_icon": {
-      "16": "images/icons/icon_16.png",
-      "32": "images/icons/icon_32.png",
-      "48": "images/icons/icon_48.png"
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png",
+      "48": "images/icon_48.png"
     },
     "default_title": "Press Alt + S to search selected / highlighted word",
     "default_popup": "code/scripts/popup.html"
