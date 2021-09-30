@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "matches" : ["<all_urls>"],
-      "css" : ["code/styling/styles.css"]
+      "css" : ["code/styling/styles.css"],
       "js" : ["code/scripts/popup.js"]
     }
   
