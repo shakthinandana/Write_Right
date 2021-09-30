@@ -16,7 +16,7 @@ Write Right,is a writing assistant that provides meanings, synonyms, antonyms an
 
 Select a Word from any page and,
 - See the meaning of the word
-- under stand the pronounciatio
+- understand the pronunciation.
 - See list of synonyms and antonyms.
 
 ## Who can use Write Right
@@ -25,6 +25,15 @@ You can use our extension to gain better understandng of the content you are rea
 
 
 ## Installation
+*First clone this repository.
+  ```sh
+    git clone https://github.com/shakthinandana/Write_Right.git
+  ```
+* open the following in chrome browser and enable developer mode.
+  ```sh
+    chrome://extensions
+  ```
+* Click on 'Load unpacked' and browse to the directories location.
 
 
 ## Tech
