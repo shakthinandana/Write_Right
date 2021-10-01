@@ -72,8 +72,7 @@ Refer our self-explanatory <a href="https://github.com/shakthinandana/Write_Righ
 ## Support
 
 Any Questions?</br>
-Feel free to reach out to us at rightwritesupp0rt@gmail.com
-
+Feel free to shoot an email at rightwritesupp0rt@gmail.com
 
 ## License
 
