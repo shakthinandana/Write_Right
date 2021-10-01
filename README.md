@@ -56,6 +56,15 @@ Write Right uses a number of open source projects to work properly:
 Want to contribute? Great!
 Feel free to reach out to us at rightwritesupp0rt@gmail.com
 
+## Troubleshooting
+Facing an issue? check https://github.com/shakthinandana/Write_Right/blob/main/docs/troubleshoot.md to find an appropriate solution.<br>
+If the problem still persists shoot us a mail at rightwritesupp0rt@gmail.com
+
+## Third-Party Dependency
+
+* **Merriam-Webster Dictionary API**- `https://dictionaryapi.com/`
+* **myMemory Translation API**-`https://mymemory.translated.net/doc/spec.php`
+
 ## License
 
 MIT
