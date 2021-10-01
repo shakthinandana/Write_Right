@@ -1,3 +1,4 @@
+/* Global Variable initialisations*/
 let findBtn = $('#submit');
 let meaning = $('#meaning');
 let synonyms = $('#synonyms');
@@ -10,6 +11,7 @@ let Destination = $('.Destination');
 let submit = $('#submit');
 base_url = ''
 
+/*Dictionary containing language codes*/
 const language_dict = {
    "achinese": "ace",
    "adyghe": "ady",
@@ -387,6 +389,7 @@ const language_dict = {
    "zulu": "zu"
 };
 
+/*creating new chrome tab to display our content*/
 chrome.tabs.executeScript({
    code: 'window.getSelection().toString();'
 },
@@ -398,6 +401,7 @@ selection => {
       wordToSearch.val("");
 });
 
+/*Function to trigger calls if Enter is clicked*/
 document.addEventListener('keydown', key => {
    let code = key.keyCode;
    if (code == 13) {
@@ -419,6 +423,7 @@ document.addEventListener('keydown', key => {
    }
 });
 
+/*Function to trigger calls on clicking Submit button*/
 findBtn.click(() => {
    meaning.empty();
    synonyms.empty();
@@ -438,19 +443,21 @@ findBtn.click(() => {
    }
 });
 
+/*Funtion to call API and display necessry information*/
 function handleSubmit() {
-   let str = String(wordToSearch.val()).toLowerCase();
-   if(document.getElementById("submit").innerText === "Search"){
+   let str = String(wordToSearch.val()).toLowerCase();   //make input uniform 
+   if(document.getElementById("submit").innerText === "Search"){  //Meaning if Search else Translation  
       console.log(str);
-      const url = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/' + str + '?key=05263739-8ae9-45fe-842c-3a37ed0f181b';
+      const url = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/' + str + '?key=05263739-8ae9-45fe-842c-3a37ed0f181b'; //Call Thesaurus API to get json file
+      //Fetch the json and parse the required information
       fetch(url)
       .then(res => res.json())
       .then(data => {
          console.log(data);
-         if (Object.keys(data).length === 0) {
+         if (Object.keys(data).length === 0) { //Nothing was found
             error.css('display', 'block');
             error.text('No such word was found');
-         } else if (data[0]['meta'] === undefined) {
+         } else if (data[0]['meta'] === undefined) { //Exact word absent but suggestion of what the word might be is present
             error.css('display', 'block');
             error.text('Word not found. Did you mean to type any of these?');
             synonyms.css('display', 'block');
@@ -463,30 +470,30 @@ function handleSubmit() {
                let txtNear = `<li> ${nearWords} </li>`;
                $('#subNear' + k).append(txtNear)
             }
-         } else {
+         } else { //Word is found
             meaning.css('display', 'block');
             meaning.append('Searching ...');
             meaning.empty();
             checkAudio();
-            var meaning_count = 0;
+            var meaning_count = 0;  //track number of meanings
             for (var i = 0; i < data.length; i++) {
-               if(data[i].meta.id == str){
+               if(data[i].meta.id == str){   //Consider only if exact word
                   meaning_count += 1;
                   let txtMain = `<li> <strong style="text-transform: capitalize">${data[i].meta.id}</strong>
                   <i> ${data[i].fl}</i><li id="sublist${i}"> </li> </li>`;
                   meaning.append(txtMain);
                }
             }
-            if (meaning_count == 0) {
+            if (meaning_count == 0) {  //If no exact word is present
                meaning.css('display', 'none');
                error.css('display', 'block');
                error.text('Meanings do not exist in database');
             } else {
                synonyms.css('display', 'block');
                synonyms.append(`<li><strong style="text-transform: capitalize">Synonyms</strong></li>`);
-               var synonyms_count = 0;
+               var synonyms_count = 0; //track number of synonyms
                for (var i = 0; i < data.length; i++) {
-                  if(data[i].meta.id == str){
+                  if(data[i].meta.id == str){   //consider only exact word
                      if (data[i].meta.syns.length != 0) {
                         synonyms_count += 1;
                         let mainSyn = `<li> <ul id="subSyn${i}"> </ul> </li>`;
@@ -494,14 +501,14 @@ function handleSubmit() {
                      }
                   }
                }
-               if (synonyms_count == 0) {
+               if (synonyms_count == 0) { //if no synonyms are present
                   synonyms.append('Synonyms do not exist in database');
                }
                antonyms.css('display', 'block');
                antonyms.append(`<li><strong style="text-transform: capitalize">Antonyms</strong></li>`);
-               var antonyms_count = 0;
+               var antonyms_count = 0; //track number of antonyms
                for (var i = 0; i < data.length; i++) {
-                  if(data[i].meta.id == str){
+                  if(data[i].meta.id == str){   //consider only exact word
                      if (data[i].meta.ants.length != 0) {
                         console.log(data[i].meta.ants)
                         antonyms_count += 1;
@@ -511,7 +518,7 @@ function handleSubmit() {
                   }
                }
                console.log(antonyms_count)
-               if (antonyms_count == 0) {
+               if (antonyms_count == 0) { //if no antonyms are present
                   antonyms.append(`<li>Antonyms do not exist in database</li>`);
                }
                for (var k = 0; k < data.length; k++) {
@@ -543,10 +550,10 @@ function handleSubmit() {
       .catch(err => {
          console.log('error: ', err);
       })
-   } else {
-      in_lang = language_dict[String(document.getElementById("Source").value).toLowerCase()]
-      out_lang = language_dict[String(document.getElementById("Destination").value).toLowerCase()]
-      if (in_lang == out_lang) {
+   } else { //If we are performing translation
+      in_lang = language_dict[String(document.getElementById("Source").value).toLowerCase()] //Getting input language to standard ISO format
+      out_lang = language_dict[String(document.getElementById("Destination").value).toLowerCase()] //Getting output language to standard ISO format
+      if (in_lang == out_lang) { //If both languages are same
          error.css('display', 'block')
          error.text('Enter 2 distinct languages')
       } else {
@@ -558,7 +565,7 @@ function handleSubmit() {
             if (data.responseData.hasOwnProperty('match')) {
                meaning.css('display', 'block')
                meaning.append(data.responseData.translatedText)
-            } else {
+            } else { //If input or output language is invalid
                error.css('display', 'block')
                error.text('Invalid Input/Output language pair')
             }
@@ -569,8 +576,9 @@ function handleSubmit() {
 
 document.getElementById("playaudio").addEventListener("click", playAudio);
 
+/*Function to add audio pronounciation*/
 function checkAudio() {
-   const url = 'https://dictionaryapi.com/api/v3/references/collegiate/json/' + wordToSearch.val() + '?key=7a38e9d2-6aee-4970-b660-dfa0109b8579'
+   const url = 'https://dictionaryapi.com/api/v3/references/collegiate/json/' + wordToSearch.val() + '?key=7a38e9d2-6aee-4970-b660-dfa0109b8579'   //Call to Dictonary API
    fetch(url)
    .then(res => res.json())
    .then(data => {
@@ -578,13 +586,14 @@ function checkAudio() {
       if (data[0].hasOwnProperty('hwi')) {
          audio1.css('display', 'block');
          var basefile = data[0].hwi.prs[0].sound.audio;
-         base_url = 'https://media.merriam-webster.com/audio/prons/en/us/mp3/' +basefile[0]+ '/' + basefile + '.mp3';
+         base_url = 'https://media.merriam-webster.com/audio/prons/en/us/mp3/' +basefile[0]+ '/' + basefile + '.mp3';   //Link the audio file
       } else {
          audio1.css('display', 'none');            
       }
    })
 }
 
+/*Function to play the audio on Button click*/
 function playAudio() {
    var audio = new Audio(base_url);
    return audio.paused ? audio.play() : audio.pause();
@@ -592,6 +601,7 @@ function playAudio() {
 
 document.getElementById("Translate").addEventListener("click", displaychange);
 
+/*function to change between and Meaning and Translation UI*/
 function displaychange() {
    if (Translate.checked) {
       meaning.empty();
