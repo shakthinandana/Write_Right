@@ -1,4 +1,7 @@
-let findBtn = $('#submit');
+/*.............................................
+Functionality: Declarations
+.............................................*/
+let findBtn = $('#submit');                   
 let meaning = $('#meaning');
 let synonyms = $('#synonyms');
 let antonyms = $('#antonyms');
@@ -10,6 +13,14 @@ let Destination = $('.Destination');
 let submit = $('#submit');
 base_url = ''
 
+/*.............................................
+Input: Takes the Source and Destination for checking.
+
+Functionality: Finds ISO standards for given language.
+
+Output: Gives the ISO Standard name for the given 
+inputs.
+.............................................*/
 language_dict = {
    "achinese": "ace",
    "adyghe": "ady",
@@ -389,6 +400,14 @@ language_dict = {
 
 // chrome.tabs.executeScript(integer tabId(optional, default: current window), object details, function callback)
 
+/*.............................................
+Input: Highlighted text.
+
+Functionality: Selects the highlighted word 
+from web page and displays it in search box.
+
+Output: Triggers wordToSearch.
+.............................................*/
 chrome.tabs.executeScript({
     code: 'window.getSelection().toString();'
 },
@@ -401,6 +420,14 @@ chrome.tabs.executeScript({
     }
 );
 
+/*.............................................
+Input: Shortcut hit.
+
+Functionality: Triggered when Alt+S or Option+S
+is clicked on a web page.
+
+Output: Triggers findBtn.
+.............................................*/
 document.addEventListener('keydown', key => {
     let code = key.keyCode;
     if (code == 13) {
@@ -423,6 +450,14 @@ document.addEventListener('keydown', key => {
     }
 });
 
+/*.............................................
+Input: Value from wordToSearch.
+
+Functionality: Confirms that an input is
+given and triggers the main functionality.
+
+Output:Triggers handleSubmit.
+.............................................*/
 findBtn.click(() => {
     meaning.empty();
     synonyms.empty();
@@ -443,6 +478,18 @@ findBtn.click(() => {
     }
 })
 
+/*.............................................
+Input: Word by user
+
+Description: Main Functionality.
+Handles errors such as no reply from dictionary etc.
+Calls API and retrieves required information.
+
+Output: Short Definition, Synonyms, Antonyms sent 
+to user.
+If translation is requested, sends the word 
+translated to the user.
+.............................................*/
 function handleSubmit() {
     let str = String(wordToSearch.val()).toLowerCase();
     if(document.getElementById("submit").innerText === "Search"){
@@ -572,6 +619,15 @@ function handleSubmit() {
         }
 }
 
+/*.............................................
+Input: Audio request.
+
+Functionality: Triggered when the audio button
+is clicked. 
+
+Output: Returns the location of sound output.
+Calls playAudio.
+.............................................*/
 document.getElementById("playaudio").addEventListener("click", playAudio);
 
 function checkAudio() {
@@ -590,11 +646,27 @@ function checkAudio() {
         })
   }
 
+/*.............................................
+Input: Audio file.
+
+Functionality: Plays the audio file of word.
+
+Output: mp3 file played to user.
+.............................................*/
 function playAudio() {
   var audio = new Audio(base_url);
   return audio.paused ? audio.play() : audio.pause();
   }
 
+/*.............................................
+Input: Checkbox click from user.
+
+Functionality: Triggered when Translate 
+option is checked.
+Allows user to add Source and Destination.
+
+Output: Calls translate or search functionality.
+.............................................*/
 document.getElementById("Translate").addEventListener("click", displaychange);
 
 function displaychange() {
