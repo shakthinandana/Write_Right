@@ -1,6 +1,6 @@
 | Grading Points| Self Assessment | Evidence|
 |-----|---------|---------|
-|workload is spread over the whole team (one team member is often Xtimes more productive than the others... |
+|workload is spread over the whole team (one team member is often Xtimes more productive than the others... | | Commits are done by everybody|
 but nevertheless, here is a track record that everyone is contributing a lot)|2|https://github.com/shakthinandana/Write_Right/graphs/contributors
 | Number of commits|3| Total commits : 92 and counting
 | Number of commits: by different people | | |
@@ -101,15 +101,15 @@ but nevertheless, here is a track record that everyone is contributing a lot)|2|
 | Question 14.2: Do you have a contributions policy? |  |  |
 | Question 14.3: Is your contributions' policy publicly available? |  |  |
 | Question 14.4: Do contributors keep the copyright/IP of their contributions? |  |  |
-| Q15 - Your software's copyright and licensing  |  |  |
-| Question 15.1: Does your website and documentation clearly state the copyright owners of your software and documentation? |  |  |
+| Q15 - Your software's copyright and licensing  | 4 |  |
+| Question 15.1: Does your website and documentation clearly state the copyright owners of your software and documentation? | 4 | https://github.com/shakthinandana/Write_Right/blob/main/CITATION.md |
 | Question 15.2: Does each of your source code files include a copyright statement? |  |  |
-| Question 15.3: Does your website and documentation clearly state the licence of your software? |  |  |
-| Question 15.4: Is your software released under an open source licence? |  |  |
-| Question 15.5: Is your software released under an OSI-approved open-source licence? |  |  |
-| Question 15.6: Does each of your source code files include a licence header? |  |  |
-| Question 15.7: Do you have a recommended citation for your software? |  |  |
-| Q16 - Your plans for the future |  |  |
+| Question 15.3: Does your website and documentation clearly state the licence of your software? | 4 | https://github.com/shakthinandana/Write_Right/blob/main/LICENSE |
+| Question 15.4: Is your software released under an open source licence? | 4 | Our repo is open sourced |
+| Question 15.5: Is your software released under an OSI-approved open-source licence? | 4 | Yes, we use MIT |
+| Question 15.6: Does each of your source code files include a licence header? | NA | NA |
+| Question 15.7: Do you have a recommended citation for your software? | 4 | https://github.com/shakthinandana/Write_Right/blob/main/CITATION.md |
+| Q16 - Your plans for the future | 4 | https://github.com/shakthinandana/Write_Right/blob/main/Roadmap.md |
 | Question 16.1: Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)? | 3 | Yes, we have projects roadmap for next 2 months |
 | Question 16.2: Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed? | Not Applicable | Not Applicable |
-| Question 16.3: Do you make timely announcements of the deprecation of components, APIs, etc.? | | |
+| Question 16.3: Do you make timely announcements of the deprecation of components, APIs, etc.? | 4 | API's used are listed. |
