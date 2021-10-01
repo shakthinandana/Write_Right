@@ -54,7 +54,7 @@ Write Right uses a number of open source projects to work properly:
 ## Development
 
 Want to contribute? Great!
-
+Feel free to reach out to us at rightwritesupp0rt@gmail.com
 
 ## License
 
@@ -62,4 +62,9 @@ MIT
 
 **Free Software, Hell Yeah!**
 
-
+## Team members
+* Sakthi Nandana
+* Ashwin Shankar Umasankar
+* Kailash Singaravelu
+* Saikoushik
+* Itha Ashwin
