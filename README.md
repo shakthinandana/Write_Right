@@ -1,7 +1,7 @@
 # Write Right ✔
 ![MIT license](https://img.shields.io/badge/License-MIT-green.svg)
-[![GitHub issues](https://img.shields.io/github/issues/shakthinandana/Write_Right)](https://github.com/shakthinandana/Write_Right.git)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/shakthinandana/Write_Right)
+[![GitHub issues](https://img.shields.io/github/issues/shakthinandana/Write_Right)](https://github.com/shakthinandana/Write_Right/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/shakthinandana/Write_Right)](https://github.com/shakthinandana/Write_Right/issues?q=is%3Aissue+is%3Aclosed)
 ![GitHub contributors](https://img.shields.io/github/contributors/shakthinandana/Write_Right)
 [![Coverage Status](https://coveralls.io/repos/github/shakthinandana/Write_Right/badge.svg?branch=main)](https://coveralls.io/github/shakthinandana/Write_Right?branch=main)
 ![basic badge](https://github.com/shakthinandana/Write_Right/actions/workflows/unit-test.yml/badge.svg)
@@ -43,36 +43,27 @@ You can use our extension to gain better understandng of the content you are rea
 * There are two ways to use this extension. You can simply click on the extension and enter any word to search for it.
 * alternatively you can highlight a word in a webpage and click  <kbd>Alt</kbd> + <kbd>s</kbd> and then hit <kbd>Enter</kbd>  to do the same.
 
-## Tech
+## Languages used
 
 Write Right uses a number of open source projects to work properly:
 
-- [AngularJS] - HTML enhanced for web apps!
-- [Ace Editor] - awesome web-based text editor
-- [markdown-it] - Markdown parser done right. Fast and easy to extend.
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - evented I/O for the backend
-- [Express] - fast node.js network app framework [@tjholowaychuk]
-- [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-to Markdown converter
-- [jQuery] - duh
-
-And of course Write Right itself is open source.
+- HTML
+- JavaScript
+- CSS
 
 ## Development
 
 Want to contribute? Great!
+Feel free to reach out to us at rightwritesupp0rt@gmail.com
 
 ## Troubleshooting
+Facing an issue? check https://github.com/shakthinandana/Write_Right/blob/main/docs/troubleshoot.md to find an appropriate solution.<br>
+If the problem still persists shoot us a mail at rightwritesupp0rt@gmail.com
 
-Struck with some error? Don't worry.</br>
-Refer our self-explanatory <a href="https://github.com/shakthinandana/Write_Right/blob/main/docs/troubleshoot.md">Troubleshooting</a> document.
+## Third-Party Dependency
 
-## Support
-
-Any Questions?</br>
-Feel free to shoot an email at rightwritesupp0rt@gmail.com
+* **Merriam-Webster Dictionary API**- `https://dictionaryapi.com/`
+* **myMemory Translation API**-`https://mymemory.translated.net/doc/spec.php`
 
 ## License
 
@@ -80,4 +71,9 @@ MIT
 
 **Free Software, Hell Yeah!**
 
-
+## Team members
+* Sakthi Nandana
+* Ashwin Shankar Umasankar
+* Kailash Singaravelu
+* Saikoushik
+* Itha Ashwin
