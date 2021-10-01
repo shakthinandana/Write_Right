@@ -3,7 +3,7 @@
   "name": "WriteRight",
   "version": "1.0",
   "homepage_url": "https://github.com/shakthinandana/Write_Right",
-  "description": "A Simple tool to make writing better,faster and professional ",
+  "description": "A Simple tool to make writing faster, better and professional ",
   "permissions": ["activeTab", "declarativeContent"],
   "icons": {
     "16": "images/icon_16.png",
@@ -11,6 +11,15 @@
     "48": "images/icon_48.png",
     "128": "images/icon_128.png"
   },
+  "minimum_chrome_version": "14",
+  "content_scripts": [
+    {
+      "matches" : ["<all_urls>"],
+      "css" : ["code/styling/styles.css"],
+      "js" : ["code/scripts/popup.js"]
+    }
+  
+  ],
 
   "page_action": {
     "default_icon": {
@@ -19,11 +28,11 @@
       "48": "images/icon_48.png"
     },
     "default_title": "Press Alt + S to search selected / highlighted word",
-    "default_popup": "popup.html"
+    "default_popup": "code/scripts/popup.html"
   },
 
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["code/scripts/background.js"],
     "persistent": false
   },
 
