@@ -11,7 +11,7 @@
 * For **Translation** the following API was used: `https://mymemory.translated.net/`
 
 ## To-Do
-* **Testing -** add unit tests
+* **Testing -** add unit tests and workflows
 * **UI changes** ( materialize )
 * Add **demo/videos** for intructions
 * Add proper **Documentation**
