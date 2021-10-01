@@ -64,6 +64,11 @@ And of course Write Right itself is open source.
 
 Want to contribute? Great!
 
+## Troubleshooting
+
+Struck with some error? Don't worry.</br>
+Refer our self-explanatory <a href="https://github.com/shakthinandana/Write_Right/blob/main/docs/troubleshoot.md">Troubleshooting</a> document.
+
 ## Support
 
 Any Questions?</br>
