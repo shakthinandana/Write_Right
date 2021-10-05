@@ -65,6 +65,10 @@ If the problem still persists shoot us a mail at rightwritesupp0rt@gmail.com
 * **Merriam-Webster Dictionary API**- `https://dictionaryapi.com/`
 * **myMemory Translation API**-`https://mymemory.translated.net/doc/spec.php`
 
+## Roadmap
+
+Access the roadmap here - https://github.com/shakthinandana/Write_Right/blob/main/Roadmap.md to know the current improvements that is planned for this software.
+
 ## License
 
 MIT
