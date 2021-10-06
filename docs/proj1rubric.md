@@ -1,7 +1,7 @@
 | Grading Points| Self Assessment | Evidence|
 |-----|---------|---------|
 |workload is spread over the whole team (one team member is often Xtimes more productive than the others... | | Commits are done by everybody|
-but nevertheless, here is a track record that everyone is contributing a lot)|2|https://github.com/shakthinandana/Write_Right/graphs/contributors
+but nevertheless, here is a track record that everyone is contributing a lot)|3|https://github.com/shakthinandana/Write_Right/graphs/contributors
 | Number of commits|3| Total commits : 92 and counting
 | Number of commits: by different people |3|  https://github.com/shakthinandana/Write_Right/graphs/commit-activity |
 | Issues reports: there are **many**| |
