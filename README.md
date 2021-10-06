@@ -76,7 +76,7 @@ MIT
 **Free Software, Hell Yeah!**
 
 ## Team members
-* Sakthi Nandana
+* Shakthi Nandana
 * Ashwin Shankar Umasankar
 * Kailash Singaravelu
 * Saikaushik Kalyanaraman
