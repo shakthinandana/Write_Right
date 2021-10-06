@@ -77,7 +77,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 | Question 10.5: Do you back-up your repository? |  3|  Yes, we have backed up our code in Zenodo : https://zenodo.org/record/5542741#.YV0P6X0pBPZ|
 | Q11 - Building and installing your software|  |  |
 | Question 11.1: Do you provide publicly-available instructions for building your software from the source code? |  3|   Yes, we have the steps here : https://github.com/shakthinandana/Write_Right/blob/main/docs/buildfrom.md|
-| Question 11.2: Can you build, or package, your software using an automated tool? e.g. Make (https://www.gnu.org/software/make/), ANT (http://ant.apache.org/), Maven (https://maven.apache.org/), CMake (https://cmake.org/), Python setuptools (https://pypi.python.org/pypi/setuptools), or R package tools (https://cran.r-project.org/doc/manuals/r-devel/R-exts.html) |  0|  |
+| Question 11.2: Can you build, or package, your software using an automated tool? e.g. Make (https://www.gnu.org/software/make/), ANT (http://ant.apache.org/), Maven (https://maven.apache.org/), CMake (https://cmake.org/), Python setuptools (https://pypi.python.org/pypi/setuptools), or R package tools (https://cran.r-project.org/doc/manuals/r-devel/R-exts.html) |  3|  As its a chrome extension, we package it as a Zip file and use it. It can also be bundled using npm |
 | Question 11.3: Do you provide publicly-available instructions for deploying your software? |  3|  Yes the steps are in the readme.md file : https://github.com/shakthinandana/Write_Right/blob/main/README.md|
 | Question 11.4: Does your documentation list all third-party dependencies? |  3|  Evidence in the readme.md file : https://github.com/shakthinandana/Write_Right/blob/main/README.md|
 | Question 11.5: Does your documentation list the version number for all third-party dependencies? |  3| We use only one third part API, and we use the recent and only version of it |
@@ -104,7 +104,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 | Question 14.3: Is your contributions' policy publicly available? |  3|  Yes it is publicly available.|
 | Question 14.4: Do contributors keep the copyright/IP of their contributions? |  0|  No|
 | Q15 - Your software's copyright and licensing  | 3 | MIT License  |
-| Question 15.1: Does your website and documentation clearly state the copyright owners of your software and documentation? | 4 | https://github.com/shakthinandana/Write_Right/blob/main/CITATION.md |
+| Question 15.1: Does your website and documentation clearly state the copyright owners of your software and documentation? | 3 | https://github.com/shakthinandana/Write_Right/blob/main/CITATION.md |
 | Question 15.2: Does each of your source code files include a copyright statement? | 0 |  |
 | Question 15.3: Does your website and documentation clearly state the licence of your software? | 3 | https://github.com/shakthinandana/Write_Right/blob/main/LICENSE |
 | Question 15.4: Is your software released under an open source licence? | 3 | Our repo is open sourced |
@@ -113,5 +113,5 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 | Question 15.7: Do you have a recommended citation for your software? | 3 | https://github.com/shakthinandana/Write_Right/blob/main/CITATION.md |
 | Q16 - Your plans for the future | 3 | https://github.com/shakthinandana/Write_Right/blob/main/Roadmap.md |
 | Question 16.1: Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)? | 3 | Yes, we have projects roadmap for next 2 months |
-| Question 16.2: Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed? | Not Applicable | Not Applicable |
+| Question 16.2: Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed? | NA | NA |
 | Question 16.3: Do you make timely announcements of the deprecation of components, APIs, etc.? | 3 | API's used are listed. |
