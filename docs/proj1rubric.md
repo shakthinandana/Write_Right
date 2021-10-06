@@ -1,4 +1,4 @@
-Self Assessment Column 2 Total: 207 
+Self Assessment Column 2 Total: 210
 
 | Grading Points| Self Assessment | Evidence|
 |-----|---------|---------|
@@ -11,7 +11,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 | DOI badge: exists | 3| https://github.com/shakthinandana/Write_Right/blob/main/README.md 
 |Docs: doco generated , format not ugly |3| https://github.com/shakthinandana/Write_Right/tree/main/docs
 |Docs: what: point descriptions of each class/function (in isolation) |3  |  https://github.com/shakthinandana/Write_Right/tree/main/docs|
-|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|1| We dont have a demo yet, but we have explained the usage in detail in documentation.
+|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|2| We dont have a demo yet, but we have explained the usage in detail in documentation.
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3|https://github.com/shakthinandana/Write_Right/tree/main/docs|
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|0| |
 | Use of version control tools| 3| Use of branches and commits.  
