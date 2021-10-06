@@ -7,7 +7,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|2|
 | Issues reports: there are **many**| |
 | issues are being  closed| | |
 | DOI badge: exists | 3| https://github.com/shakthinandana/Write_Right/blob/main/README.md 
-|Docs: doco generated , format not ugly |in GH|
+|Docs: doco generated , format not ugly |in GH| https://github.com/shakthinandana/Write_Right/tree/main/docs
 |Docs: what: point descriptions of each class/function (in isolation) |  |  |
 |Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|doc page entries| Please find the use cases and mini tutorials for the same at the given link : 
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|
