@@ -79,5 +79,5 @@ MIT
 * Sakthi Nandana
 * Ashwin Shankar Umasankar
 * Kailash Singaravelu
-* Saikoushik
+* Saikaushik Kalyanaraman
 * Itha Ashwin
