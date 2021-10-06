@@ -6,7 +6,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|2|
 | Number of commits: by different people |3|  https://github.com/shakthinandana/Write_Right/graphs/commit-activity |
 | Issues reports: there are **many**| |
 | issues are being  closed| | |
-| DOI badge: exists |  | 
+| DOI badge: exists | 3| https://github.com/shakthinandana/Write_Right/blob/main/README.md 
 |Docs: doco generated , format not ugly |in GH|
 |Docs: what: point descriptions of each class/function (in isolation) |  |  |
 |Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|doc page entries| Please find the use cases and mini tutorials for the same at the given link : 
