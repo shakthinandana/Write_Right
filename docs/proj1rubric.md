@@ -1,8 +1,10 @@
+Self Assessment Column 2 Total: 207 
+
 | Grading Points| Self Assessment | Evidence|
 |-----|---------|---------|
 |workload is spread over the whole team (one team member is often Xtimes more productive than the others... |3 | Commits are done by everybody|
 but nevertheless, here is a track record that everyone is contributing a lot)| 3|https://github.com/shakthinandana/Write_Right/graphs/contributors
-| Number of commits|3| Total commits : 92 and counting
+| Number of commits|3| Total commits : 159 and counting
 | Number of commits: by different people |3|  https://github.com/shakthinandana/Write_Right/graphs/commit-activity |
 | Issues reports: there are **many**| 2 | We discuss in person twice a week and discuss all issues
 | issues are being  closed| 2| We discuss in person twice a week and discuss all issues, agree on a resolution action and close it|
@@ -13,7 +15,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3|https://github.com/shakthinandana/Write_Right/tree/main/docs|
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|0| |
 | Use of version control tools| 3| Use of branches and commits.  
-|Use of  style checkers | | | 
+|Use of  style checkers |  | | 
 | Use of code  formatters. |  | |
 | Use of syntax checkers. |   |   |
 | Use of code coverage | |  |
@@ -21,9 +23,9 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 | |  |
 | test cases are routinely executed| |  |
 | the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|  2| https://github.com/shakthinandana/Write_Right/blob/main/CONTRIBUTING.md
-| issues are discussed before they are closed|even if you discuss in slack, need a sumamry statement here| 2| Issues are discussed in person and resolved after the discussion during group meetings.|
+| issues are discussed before they are closed| 2| Issues are discussed in person and resolved after the discussion during group meetings.|
 | Chat channel: exists| 3| We have a whatsapp group| 
-| test cases:.a large proportion of the issues related to handling failing cases.| |
+| test cases:.a large proportion of the issues related to handling failing cases.| 3 | If our manual testing causes issues, we discuss in person and resolve it | 
 | evidence that the whole team is using the same tools: everyone can get to all tools and files| 3| The entire team has a local working instance of the project and the same chrome version to ensure no hiccups in running the software locally.|
 | evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)| 3| All the team members have the same manifest.json file in their respective local setup to ensure parity all around.|
 | evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)| 3| Everyone has a local instance of the latest version of the project. The output can be shown by anyone in the team.
@@ -79,8 +81,8 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 | Question 11.3: Do you provide publicly-available instructions for deploying your software? |  3|  Yes the steps are in the readme.md file : https://github.com/shakthinandana/Write_Right/blob/main/README.md|
 | Question 11.4: Does your documentation list all third-party dependencies? |  3|  Evidence in the readme.md file : https://github.com/shakthinandana/Write_Right/blob/main/README.md|
 | Question 11.5: Does your documentation list the version number for all third-party dependencies? |  3| We use only one third part API, and we use the recent and only version of it |
-| Question 11.6: Does your software list the web address, and licences for all third-party dependencies and say whether the dependencies are mandatory or optional? | 2 |  |
-| Question 11.7: Can you download dependencies using a dependency management tool or package manager? *e.g. Ivy (http://ant.apache.org/ivy/), Maven (https://maven.apache.org/), Python pip (https://pypi.python.org/pypi/pip) or setuptools (https://pypi.python.org/pypi/setuptools), PHP Composer (https://getcomposer.org/), Ruby gems (https://rubygems.org), or R PackRat (https://rstudio.github.io/packrat/) |  |  |
+| Question 11.6: Does your software list the web address, and licences for all third-party dependencies and say whether the dependencies are mandatory or optional? | 2 | We use only one third part API, listed in the code comments |
+| Question 11.7: Can you download dependencies using a dependency management tool or package manager? *e.g. Ivy (http://ant.apache.org/ivy/), Maven (https://maven.apache.org/), Python pip (https://pypi.python.org/pypi/pip) or setuptools (https://pypi.python.org/pypi/setuptools), PHP Composer (https://getcomposer.org/), Ruby gems (https://rubygems.org), or R PackRat (https://rstudio.github.io/packrat/) | NA  | NA |
 | Question 11.8: Do you have tests that can be run after your software has been built or deployed to show whether the build or deployment has been successful? |  0|  We haven't developed a test suite yet.|
 | Question 12.1: Do you have an automated test suite for your software? |  0|  |
 | Question 12.2: Do you have a framework to periodically (e.g. nightly) run your tests on the latest version of the source code? |  0|  |
@@ -109,7 +111,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 | Question 15.5: Is your software released under an OSI-approved open-source licence? | 3 | Yes, we use MIT |
 | Question 15.6: Does each of your source code files include a licence header? | NA | NA |
 | Question 15.7: Do you have a recommended citation for your software? | 3 | https://github.com/shakthinandana/Write_Right/blob/main/CITATION.md |
-| Q16 - Your plans for the future | 4 | https://github.com/shakthinandana/Write_Right/blob/main/Roadmap.md |
+| Q16 - Your plans for the future | 3 | https://github.com/shakthinandana/Write_Right/blob/main/Roadmap.md |
 | Question 16.1: Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)? | 3 | Yes, we have projects roadmap for next 2 months |
 | Question 16.2: Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed? | Not Applicable | Not Applicable |
 | Question 16.3: Do you make timely announcements of the deprecation of components, APIs, etc.? | 3 | API's used are listed. |
