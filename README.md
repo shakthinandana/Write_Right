@@ -80,4 +80,4 @@ MIT
 * Ashwin Shankar Umasankar
 * Kailash Singaravelu
 * Saikaushik Kalyanaraman
-* Itha Ashwin
+* Itha Aswin
